@@ -11,7 +11,7 @@ MODEL = 'text-davinci-003'
 # Telegram secret access bot token
 BOT_TOKEN = os.environ.get("TELE_BOT_KEY")
 # Defining the bot's personality using adjectives
-BOT_PERSONALITY = 'Answer in a professional tone, '
+BOT_PERSONALITY = ''
 
 # 2a. Function that gets the response from OpenAI's chatbot
 def openAI(prompt):
