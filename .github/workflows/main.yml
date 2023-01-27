@@ -1,6 +1,6 @@
 name: Python script
 
-on: [push]
+on:
   workflow_dispatch:
 
 jobs:
@@ -13,5 +13,6 @@ jobs:
 
     - name: Run script
       env:
-          AZURE_SECRET_TOKEN: ${{ secrets.AZURE_SECRET_TOKEN }}
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          TELE_BOT_KEY: ${{ secrets.TELE_BOT_KEY }}
       run: python main.py
